@@ -2,17 +2,13 @@
 # 2026年10月22日17时38分44秒
 # 2695016411@qq.com
 # Definition for singly-linked list.
+from typing import Optional
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-class Solution(object):
-    def removeElements(self, head, val):
-        """
-        :type head: Optional[ListNode]
-        :type val: int
-        :rtype: Optional[ListNode]
-        """
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         dummy_head=ListNode(next=head)
 
         current=dummy_head
